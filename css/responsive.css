@@ -1,0 +1,123 @@
+/*
+   Olio Theme Responsive Design
+*/
+
+@media (max-width: 1024px) {
+    .hero-section{
+        height: 650px;
+    }
+}
+
+/* ---- Start of max-width 992px CSS ---- */
+@media (max-width: 992px) {
+    .sm-padding{ padding: 15px; }
+    ul.nav > li > a {
+        padding: 0 5px;
+        font-size: 10px;
+    }
+    .content-info{
+        padding-bottom: 65px;
+        padding-top: 0;
+    }
+    .hero-section{
+        height: 570px;
+    }
+    .about-content {
+        padding: 60px 0;
+    }
+    .pdl-80{ padding-left: 0 }
+    .contact-info,
+    .contact-form {
+        padding-right: 0;
+        padding-left: 15px;
+    }
+    .contact-wrap {
+        padding: 0px 0 100px;
+        text-align: center;
+    }
+    #google-map {
+        width: 100%;
+        height: 260px;
+        position: inherit;
+    }
+}
+/* ---- End of max-width 992px CSS ---- */
+
+
+/* ---- Start of min-width 480px and max-width 768px CSS ---- */
+@media all and (min-width: 480px) and (max-width: 768px) {
+	
+}
+/* ---- End of min-width 480px and max-width 768px CSS ---- */
+
+
+/* ---- Start of max-width 767px CSS ---- */
+@media all and (max-width: 767px) {
+    body, p{
+        font-size: 12px;
+        line-height: 22px;
+    }
+    h1{
+        font-size: 30px!important;
+    }
+    h2{
+        font-size: 20px;
+    }
+    h3{
+        font-size: 16px;
+    }
+    .mock-hide,
+    p br{
+        display: none;
+    }
+    .padding{
+        padding: 60px 0;
+    }
+    .xs-padding{
+    	padding: 15px;
+    }
+    .navbar-brand{
+        padding: 17px 0;
+    }
+    .menu-btn,
+    .menu-wrap ul.nav{
+        display: none;
+    }
+    .slicknav_menu {
+        display:block;
+    }
+    .contact-info{
+        padding-bottom: 0;
+        text-align: center;
+    }
+    .contact-wrap { padding: 0px 0 60px; }
+    .contact-form{ padding-right: 0; }
+    .contact-form .col-md-12{ text-align: center; }
+    .portfolio-wrap .section-heading{
+        padding: 45px 0;
+    }
+    .cta-section .cta-content h2{ font-size: 20px; }
+    
+}
+/* ---- End of max-width 767px CSS ---- */
+
+
+/* ---- Start of max-width 520px CSS ---- */
+@media all and (max-width: 520px) {
+
+}
+/* ---- End of max-width 520px CSS ---- */
+
+
+/* ---- Start of max-width 420px CSS ---- */
+@media all and (max-width: 420px) {
+    
+}
+/* ---- End of max-width 420px CSS ---- */
+
+
+/* ---- Start of max-width 380px CSS ---- */
+@media all and (max-width: 380px) {
+	
+}
+/* ---- End of max-width 380px CSS ---- */
