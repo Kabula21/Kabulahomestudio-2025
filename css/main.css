@@ -353,6 +353,19 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
 .navbar-fixed-top ul.nav > li.active > a{
     color: #fff;
 }
+
+.logo {
+    width: 300px; /* Aumentado proporcionalmente */
+    height: auto; /* Mantém a proporção */
+    margin-top: 10px;
+}
+
+.logo-nav{
+    width: 120px; /* Aumentado proporcionalmente */
+    height: auto; /* Mantém a proporção */
+    
+}
+
 .logo-light,
 .navbar-fixed-top .logo-light,
 .logo-dark,
