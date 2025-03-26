@@ -97,3 +97,29 @@
 
 
 })(jQuery);
+
+/*=========================================================================
+    WhatssApp
+=========================================================================*/
+
+// Seleciona os elementos
+var popup = document.getElementById("whatsappPopup");
+var button = document.getElementById("whatsappButton");
+
+// Função para alternar a visibilidade do popup
+function toggleWhatsAppPopup() {
+    popup.style.display = (popup.style.display === "block") ? "none" : "block";
+}
+
+// Evento de clique no botão do WhatsApp
+button.addEventListener("click", function(event) {
+    event.stopPropagation(); // Evita que o clique feche o popup imediatamente
+    toggleWhatsAppPopup();
+});
+
+// Fecha o popup ao clicar fora
+document.addEventListener("click", function(event) {
+    if (popup.style.display === "block" && !popup.contains(event.target) && !button.contains(event.target)) {
+        popup.style.display = "none";
+    }
+});
