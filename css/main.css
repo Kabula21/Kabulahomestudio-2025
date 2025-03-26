@@ -508,11 +508,13 @@ ul.nav > li > a.active{
 }
 .hero-content h1{
     font-size: 80px;
-    text-transform: uppercase;
+    text-transform: uppercase; 
+    margin-bottom: 10px;    
 }
 .hero-content h5{
     color: #ddd;
-    text-transform: uppercase;
+    text-transform: uppercase; 
+    margin-bottom: 10px;   
 }
 .hero-content p{
     color: #ddd;
@@ -631,7 +633,7 @@ ul.nav > li > a.active{
     margin-bottom: 5px;
 }
 .service-content p{
-    color: #bbb;
+    color: #ffffff;
     font-size: 13px;
     font-weight: 900;
 }
