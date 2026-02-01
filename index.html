@@ -175,22 +175,33 @@
             </div>
         </section><!-- service-section -->
             
-        <section id="works" class="portfolio-section bg-dark">
-            <div class="container-fluid">
-                <div class="row portfolio-wrap d-flex align-items-center">
-                    <div class="col-md-4 xs-padding">
-                        <div class="section-heading pdl-80">
-                            <h2 class="mb-20">Portfolio</h2>
-                            <p class="mb-20">Confira alguns trabalhos realizados<br> aqui no Kabula Home Studio (Singles, Eps, Full Albuns)</p>
-                            <a style="font-size: 24px;">Aperte o Play <i class="ti-control-play"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-md-8">
-                        <div class="row portfolio-items g-3" style="max-height: 600px; overflow-y: auto; column-gap: 100px; row-gap: 15px;">
-                            <script>
-                                let portfolioContainer = document.querySelector('.portfolio-items');
-                                let trackUrls = [
-									"https://bandcamp.com/EmbeddedPlayer/album=1660466262/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/",
+       <section id="works" class="portfolio-section bg-dark">
+  <div class="container-fluid">
+    <div class="row portfolio-wrap align-items-center">
+
+      <!-- TEXTO -->
+      <div class="col-md-4">
+        <div class="section-heading pdl-80">
+          <h2 class="mb-20">Portfolio</h2>
+          <p class="mb-20">
+            Confira alguns trabalhos realizados<br>
+            aqui no Kabula Home Studio (Singles, Eps, Full Albuns)
+          </p>
+          <span style="font-size: 24px;">
+            Aperte o Play <i class="ti-control-play"></i>
+          </span>
+        </div>
+      </div>
+
+      <!-- PORTFOLIO -->
+      <div class="col-md-8">
+        <div class="row portfolio-items g-4" style="max-height:600px; overflow-y:auto;">
+
+          <script>
+            const portfolioContainer = document.querySelector('.portfolio-items');
+
+            const trackUrls = [
+              "https://bandcamp.com/EmbeddedPlayer/album=1660466262/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/",
 									"https://open.spotify.com/embed/track/1pe7NbQkOQwakEwypNLoz7?utm_source=generator",
 									"https://open.spotify.com/embed/album/6kFZp4qHs5vNUMaz1x0IQr?utm_source=generator",
 									"https://open.spotify.com/embed/album/1fh48S9bqvfxd3VwBKXJh5?utm_source=generator",
@@ -224,25 +235,38 @@
                                     "https://open.spotify.com/embed/album/6IaKlbfxKCJXQXxVjQOIxz?utm_source=generator",
                                     "https://open.spotify.com/embed/album/6cFQRR2Knhga9EaKuG9ctl?utm_source=generator",
                                     "https://open.spotify.com/embed/album/3cMODWh60VQr3PZEm1VOTt?utm_source=generator"
-                                ];        
-                                trackUrls.forEach(url => {
-                                    let col = document.createElement('div');
-                                    col.classList.add('col-lg-2', 'col-md-4', 'col-sm-6', 'px-0');
-                                    col.innerHTML = `
-                                        <div class="portfolio-box">
-                                            <div>
-                                                <iframe src="${url}" width="300" height="400" frameBorder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                                            </div>
-                                        </div>
-                                    `;
-                                    portfolioContainer.appendChild(col);
-                                });
-                            </script>
-                        </div>
-                    </div>
+            ];
+
+            trackUrls.forEach(url => {
+              const col = document.createElement('div');
+              col.classList.add(
+                'col-12',
+                'col-sm-6',
+                'col-md-4',
+                'col-lg-3'
+              );
+
+              col.innerHTML = `
+                <div class="portfolio-box">
+                  <iframe
+                    src="${url}"
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy">
+                  </iframe>
                 </div>
-            </div>
-        </section>
+              `;
+
+              portfolioContainer.appendChild(col);
+            });
+          </script>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
         
         <section id="contact" class="contact-section bg-dark">
             <div class="container-fluid">
