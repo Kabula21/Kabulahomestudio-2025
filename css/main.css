@@ -843,3 +843,10 @@ ul.nav > li > a.active{
     width: 100%;
 }
 
+.portfolio-box iframe {
+  width: 100%;
+  height: 380px;
+  border: 0;
+}
+
+
